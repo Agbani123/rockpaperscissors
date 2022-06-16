@@ -35,9 +35,9 @@ def best_out_of(n):
             computer_wins+=1
             print("You played {} and the computer played {}. you lost".format(user,computer))
     if player_wins>computer_wins:
-        print("You have won the best out of", n)
+        return ("You have won {} out of {}".format(player_wins,n))
     else:
-        print("the computer has won best out of", n)
+        return ("the computer has won {} out of {}".format(computer_wins,n))
 
 if __name__=="__main__":
-    print(best_out_of(9))
+    print(best_out_of(12))
